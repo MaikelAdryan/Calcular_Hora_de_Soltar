@@ -1,6 +1,6 @@
 from datetime import timedelta, datetime
 
-def formater_hour(hour):
+def transform_in_timedelta(hour):
   hours, minutes = [int(i) for i in hour.split(':')]
   return timedelta(hours=hours, minutes=minutes)
 
@@ -17,10 +17,10 @@ def calculate_hour_exit(
     journey='7:10', start_journey='15:49',
     start_interval='17:00', end_interval='17:30'
   ):
-  journey = formater_hour(journey)
-  start_journey = formater_hour(start_journey)
-  start_interval = formater_hour(start_interval)
-  end_interval = formater_hour(end_interval)
+  journey = transform_in_timedelta(journey)
+  start_journey = transform_in_timedelta(start_journey)
+  start_interval = transform_in_timedelta(start_interval)
+  end_interval = transform_in_timedelta(end_interval)
   
   total_interval = end_interval - start_interval
   total_journey = journey + total_interval
