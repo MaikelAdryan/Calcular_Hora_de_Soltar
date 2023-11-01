@@ -16,7 +16,7 @@ layout = [
   [sg.Text('', key='result')]
 ]
 
-window = sg.Window('Calcular saída', layout)
+window = sg.Window('Feito por Adryan!', layout)
 while True:
   event, values = window.read()
   if event == sg.WINDOW_CLOSED or event == 'Cancelar':

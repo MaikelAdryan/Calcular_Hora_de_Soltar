@@ -18,7 +18,7 @@ def format_time(time):
 
 
 def calculate_hour_exit(
-    journey='710', start_journey='1549',
+    journey='07:10', start_journey='15:49',
     start_interval='17:00', end_interval='17:30'
   ):
   journey = transform_in_timedelta(journey)
