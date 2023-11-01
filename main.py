@@ -1,7 +1,7 @@
 from datetime import timedelta, datetime
 
 def transform_in_timedelta(hour):
-  hours, minutes = [int(i) for i in hour.split(':')]
+  hours, minutes = [int(i) for i in str(hour).split(':')]
   return timedelta(hours=hours, minutes=minutes)
 
 
