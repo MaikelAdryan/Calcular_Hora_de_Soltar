@@ -1,12 +1,9 @@
 from datetime import timedelta, datetime
 
 def transform_in_timedelta(time):
-  print(len(time))
   time = str(time) if not type(time) == type('string') else time
   time = f'0{time[0]}:{time[1:]}' if time.count(':') == 0 and len(time) == 3 else time
-  print(time)
   time = f'{time[0:2]}:{time[2:4]}' if time.count(':') == 0 and len(time) == 4 else time
-  print(time)
   
   hours, minutes = [int(i) for i in time.split(':')]
   return timedelta(hours=hours, minutes=minutes)
@@ -37,7 +34,6 @@ def calculate_hour_exit(
     f'Duração do Intervalo: {format_time(total_interval)}\n'
     f'Soltará às: {format_time(end_journey)}'
   )
-  return result
 
 
 # calculate_hour_exit(
