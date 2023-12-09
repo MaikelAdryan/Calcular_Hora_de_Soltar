@@ -1,4 +1,4 @@
-import PySimpleGUI as sgnaofgnafñwakfa~mnjnnnjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+import PySimpleGUI as sg
 from main import calculate_hour_exit
 
 sg.theme('Black')
